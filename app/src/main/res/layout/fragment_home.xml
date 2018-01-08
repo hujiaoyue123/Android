@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- banner -->
+            <com.youth.banner.Banner
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="350px" />
+
+        <!-- 直播 -->
+            <TextView
+                android:id="@+id/home_live_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="68px"
+                android:text="@string/home_live_title"
+                android:textColor="@color/home_title_color"
+                android:textSize="@dimen/home_title_font_size" />
+            <TextView
+                android:id="@+id/home_live_desc_text"
+                android:layout_marginTop="18px"
+                android:layout_marginLeft="24px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_live_desc"
+                android:textColor="@color/home_tip_color"
+                android:textSize="@dimen/home_tip_font_size" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/home_live_lineLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ListView
+                        android:id="@+id/home_live_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="spacingWidthUniform"
+                        android:layout_marginLeft="24px"
+                        android:layout_marginTop="44px">
+                    </ListView>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </HorizontalScrollView>
+
+        <!-- 资讯-->
+            <TextView
+                android:id="@+id/home_news_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="68px"
+                android:text="@string/home_news_title"
+                android:textColor="@color/home_title_color"
+                android:textSize="@dimen/home_title_font_size" />
+
+        <TextView
+                android:id="@+id/home_news_desc_text"
+                android:layout_marginTop="18px"
+                android:layout_marginLeft="24px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_news_desc"
+                android:textColor="@color/home_tip_color"
+                android:textSize="@dimen/home_tip_font_size" />
+
+        <ListView
+            android:id="@+id/home_news_list"
+            android:layout_width="match_parent"
+            android:layout_height="710px"
+            android:layout_marginTop="10px"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="spacingWidthUniform"></ListView>
+
+        <!--战记回顾 -->
+            <TextView
+                android:id="@+id/home_review_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="68px"
+                android:text="@string/home_review_title"
+                android:textColor="@color/home_title_color"
+                android:textSize="@dimen/home_title_font_size" />
+            <TextView
+                android:id="@+id/home_review_desc_text"
+                android:layout_marginTop="18px"
+                android:layout_marginLeft="24px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_review_desc"
+                android:textColor="@color/home_tip_color"
+                android:textSize="@dimen/home_tip_font_size" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40px"
+                    android:scrollbars="none" >
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/home_review_lineLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ListView
+                            android:id="@+id/home_review_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="spacingWidthUniform"
+                            android:layout_marginLeft="24px"
+                            android:layout_marginTop="44px">
+                        </ListView>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </HorizontalScrollView>
+
+        <!-- 名师风采-->
+            <TextView
+                android:id="@+id/home_teacher_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="68px"
+                android:text="@string/home_teacher_title"
+                android:textColor="@color/home_title_color"
+                android:textSize="@dimen/home_title_font_size" />
+            <TextView
+                android:id="@+id/home_teacher_desc_text"
+                android:layout_marginTop="18px"
+                android:layout_marginLeft="24px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_teacher_desc"
+                android:textColor="@color/home_tip_color"
+                android:textSize="@dimen/home_tip_font_size" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="50px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/home_teacher_prepare_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="186px"
+                        android:layout_marginTop="10px"
+                        android:textColor="#383838"
+                        android:text="@string/home_teacher_prepare_title"
+                        android:textSize="@dimen/home_tip_font_size"/>
+                    <com.boxin.beautypine.view.CircleImageView
+                        android:id="@+id/home_teacher_prepare_img"
+                        android:layout_width="88px"
+                        android:layout_height="88px"
+                        android:layout_marginLeft="186px"
+                        android:adjustViewBounds="false"
+                        android:background="@color/colorPrimary"
+                        android:cropToPadding="false"
+                        app:border_width="4px"
+                        app:border_color="@color/colorPrimary"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/home_teacher_live_title"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:textColor="#4272FA"
+                        android:text="@string/home_teacher_live_title"
+                        android:textSize="24px"/>
+                    <com.boxin.beautypine.view.CircleImageView
+                        android:id="@+id/home_teacher_live_img"
+                        android:layout_width="140px"
+                        android:layout_height="140px"
+                        android:layout_marginLeft="40px"
+                        android:adjustViewBounds="false"
+                        android:background="@color/colorPrimary"
+                        android:cropToPadding="false"
+                        app:border_width="4px"
+                        app:border_color="@color/colorPrimary"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/home_teacher_review_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="10px"
+                        android:textColor="#FA424E"
+                        android:text="@string/home_teacher_review_title"
+                        android:textSize="@dimen/home_tip_font_size"/>
+                    <com.boxin.beautypine.view.CircleImageView
+                        android:id="@+id/home_teacher_review_img"
+                        android:layout_width="88px"
+                        android:layout_height="88px"
+                        android:layout_marginLeft="40px"
+                        android:background="@color/colorPrimary"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        app:border_width="4px"
+                        app:border_color="@color/colorPrimary"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <ImageView
+            android:id="@+id/home_teacher_live_but_img"
+            android:gravity="center_horizontal"
+            android:layout_width="292px"
+            android:layout_height="82px"
+            android:layout_marginTop="46px"
+            android:layout_marginBottom="130px"
+            android:background="@color/colorPrimary"
+            android:cropToPadding="false" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</ScrollView>

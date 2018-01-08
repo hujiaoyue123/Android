@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/login_app_name"
+        android:layout_below="@+id/login_icon"
+        android:layout_marginTop="20px"
+        android:textSize="24px"
+        android:textColor="#FA424E"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/login_user_name"
+        android:layout_width="640px"
+        android:layout_height="78px"
+        android:layout_marginTop="150px"
+        android:hint="请输入账号"
+        android:textColorHint="#EFEFEF"
+        android:textSize="24px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_app_name"
+        android:background="@drawable/input_shape"/>
+
+    <EditText
+        android:id="@+id/login_user_password"
+        android:layout_width="640px"
+        android:layout_height="78px"
+        android:hint="请输入密码"
+        android:textColorHint="#EFEFEF"
+        android:textSize="24px"
+        android:layout_marginTop="24px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_user_name"
+        android:background="@drawable/input_shape"/>
+
+    <CheckBox
+        android:id="@+id/login_remember"
+        style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_user_password"
+        android:layout_alignStart="@+id/login_user_password"
+        android:layout_below="@+id/login_user_password"
+        android:layout_marginTop="24px"
+        android:text="记住密码"
+        android:textColor="#797979"
+        android:textSize="20px" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_below="@+id/login_remember"
+        android:layout_marginTop="60px"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:background="@drawable/login_shape"
+        android:layout_width="640px"
+        android:textColor="#FFFFFF"
+        android:textSize="36px"
+        android:layout_height="80px" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="200px"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignStart="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        android:background="@drawable/register_shape"
+        android:layout_width="300px"
+        android:textColor="#FFFFFF"
+        android:textSize="36px"
+        android:layout_height="80px" />
+
+    <Button
+        android:id="@+id/traveler_button"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="200px"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/traveler"
+        android:background="@drawable/traveler_shape"
+        android:layout_width="300px"
+        android:textColor="#FFFFFF"
+        android:textSize="36px"
+        android:layout_height="80px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

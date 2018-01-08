@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">412px</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- HOME START-->
+    <dimen name="home_title_font_size">30px</dimen>
+    <dimen name="home_tip_font_size">20px</dimen>
+    <!-- HOME END-->
+
+    <!-- openClass START-->
+    <dimen name="openClass_tab_font_size">26px</dimen>
+    <!-- openClass END-->
+</resources>

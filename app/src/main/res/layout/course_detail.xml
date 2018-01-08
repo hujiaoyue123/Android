@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CourseDetailActivity">
+
+    <ImageView
+        android:id="@+id/course_image_onDetail"
+        android:layout_width="match_parent"
+        android:layout_height="460px"
+        android:layout_gravity="start"/>
+    <TextView
+        android:id="@+id/course_title_onDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68px"
+        android:layout_marginLeft="24px"
+        android:textSize="36px"
+        android:textColor="#080810"/>
+    <TextView
+        android:id="@+id/course_teacher_onDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+        android:layout_marginLeft="24px"
+        android:textSize="28px"
+        android:textColor="#FE9B67"/>
+    <TextView
+        android:id="@+id/course_duration_onDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54px"
+        android:layout_marginLeft="24px"
+        android:textSize="24px"
+        android:textColor="#999999"/>
+    <Button
+        android:id="@+id/course_button"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="25px"
+        android:background="#FA424E"
+        android:textColor="#FFFFFF"
+        android:textSize="28px"
+        android:fontFamily="PingFang-SC-Bold"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44px"
+        android:text="--- 课程简介 ---" />
+
+    <ImageView
+        android:id="@+id/course_detail_image"
+        android:layout_width="720px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

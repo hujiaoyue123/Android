@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fa424e</color>
+    <color name="colorPrimaryDark">#fa424e</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--底部菜单 start-->
+    <color name="home_bottom_normal">#cbcbcb</color>
+    <color name="home_bottom_checked">#fa424e</color>
+    <!--底部菜单 end-->
+
+    <!--HOME START-->
+    <color name="home_title_color">#080810</color>
+    <color name="home_tip_color">#999999</color>
+    <color name="selected">#fa424e</color>
+    <!--HOME END -->
+
+    <!--openclass START-->
+    <color name="openclass_review_background">#F2F2F2</color>
+    <!--openclass END -->
+
+
+</resources>

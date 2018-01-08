@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">弘学教育</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="traveler">游客</string>
+
+    <!--底部菜单 start-->
+    <string name="title_home">首页</string>
+    <string name="title_openClass">直播</string>
+    <string name="title_course">课程</string>
+    <string name="title_information">资讯</string>
+    <!--底部菜单 start-->
+
+    <!--下拉刷新 start-->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <!--下拉刷新 end -->
+
+    <!--home页文案 start -->
+    <string name="home_live_title">直播</string>
+    <string name="home_live_desc">你成功学习的第一步</string>
+    <string name="home_news_title">资讯</string>
+    <string name="home_news_desc">带你了解最新资讯</string>
+    <string name="home_review_title">战记回顾</string>
+    <string name="home_review_desc">查看近期火爆视频</string>
+    <string name="home_teacher_title">名师风采</string>
+    <string name="home_teacher_desc">最新鲜的干货讲解</string>
+    <string name="home_teacher_live_title">正在直播</string>
+    <string name="home_teacher_prepare_title">即将开播</string>
+    <string name="home_teacher_review_title">回看</string>
+    <!--home页文案 end -->
+
+    <!--openClass页文案 start -->
+    <string name="openClass_tab_live">视频直播</string>
+    <string name="openClass_tab_history">公开课历史</string>
+    <string name="openClass_tab_kungfu">股市真功夫</string>
+    <string name="openClass_tab_review">实盘案例</string>
+    <string name="openClass_live_list">直播列表</string>
+    <string name="openClass_live_interaction">在线互动</string>
+    <!--openClass页文案 end -->
+
+    <!--course页文案  start -->
+    <string name="course_lab">平台高级课</string>
+    <!--course页文案  end -->
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24px"
+    android:paddingRight="24px"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="42px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:paddingRight="42px"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">
+
+        <TextView
+            android:id="@+id/info_list_title"
+            android:textSize="30px"
+            android:lineSpacingExtra="15px"
+            android:textColor="#0c0808"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/info_list_summary"
+            android:layout_marginTop="28px"
+            android:textSize="24px"
+            android:textColor="#ACACAC"
+            android:ellipsize="end"
+            android:lineSpacingExtra="15px"
+            android:minHeight="300px"
+            android:layout_width="wrap_content"
+            android:layout_height="374px" />
+
+        <TextView
+            android:id="@+id/info_list_time"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:textSize="18px"
+            android:textColor="#ACACAC"/>
+
+    </LinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>
